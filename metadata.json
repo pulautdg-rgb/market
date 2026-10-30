@@ -1,0 +1,6 @@
+{
+  "name": "SembakoPOS - Kasir & Manajemen Toko Sembako",
+  "description": "Aplikasi POS kasir ritel & grosir sembako, manajemen inventaris multi-satuan, buku utang supplier, dan rekap keuangan shift.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

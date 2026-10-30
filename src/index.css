@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #cfdaf2;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e7eeff;
+  --color-surface-container-high: #dee8ff;
+  --color-surface-container-highest: #d8e3fb;
+  --color-surface-variant: #d8e3fb;
+  --color-on-surface: #111c2d;
+  --color-on-surface-variant: #424844;
+  --color-inverse-surface: #263143;
+  --color-inverse-on-surface: #ecf1ff;
+  --color-outline: #727974;
+  --color-outline-variant: #c2c8c2;
+  --color-surface-tint: #4a6457;
+
+  --color-primary: #00130a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0f291e;
+  --color-on-primary-container: #769283;
+  --color-primary-fixed: #cce9d8;
+  --color-primary-fixed-dim: #b0cdbd;
+  --color-on-primary-fixed: #062016;
+  --color-on-primary-fixed-variant: #324c3f;
+  --color-inverse-primary: #b0cdbd;
+
+  --color-secondary: #006c4a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #82f5c1;
+  --color-on-secondary-container: #00714e;
+  --color-secondary-fixed: #85f8c4;
+  --color-secondary-fixed-dim: #68dba9;
+  --color-on-secondary-fixed: #002114;
+  --color-on-secondary-fixed-variant: #005137;
+
+  --color-tertiary: #00130a;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #002b1b;
+  --color-on-tertiary-container: #009f6e;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-tertiary-fixed-variant: #005236;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+}
+
+/* Custom Spacing & Typography Utilities */
+.px-gutter {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pt-gutter {
+  padding-top: 1rem;
+}
+
+.pb-gutter {
+  padding-bottom: 1rem;
+}
+
+.p-gutter {
+  padding: 1rem;
+}
+
+.gap-space-xs {
+  gap: 0.25rem;
+}
+
+.gap-space-sm {
+  gap: 0.5rem;
+}
+
+.gap-space-md {
+  gap: 0.75rem;
+}
+
+.gap-space-lg {
+  gap: 1.25rem;
+}
+
+.p-space-xs {
+  padding: 0.25rem;
+}
+
+.p-space-sm {
+  padding: 0.5rem;
+}
+
+.p-space-md {
+  padding: 0.75rem;
+}
+
+.p-space-lg {
+  padding: 1.25rem;
+}
+
+.pt-space-xs {
+  padding-top: 0.25rem;
+}
+
+.pt-space-sm {
+  padding-top: 0.5rem;
+}
+
+.pt-space-md {
+  padding-top: 0.75rem;
+}
+
+.pb-space-xs {
+  padding-bottom: 0.25rem;
+}
+
+.pb-space-sm {
+  padding-bottom: 0.5rem;
+}
+
+.pb-space-md {
+  padding-bottom: 0.75rem;
+}
+
+.pb-space-lg {
+  padding-bottom: 1.25rem;
+}
+
+/* Typography tokens matching Sembako design system */
+.font-headline-xl {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-xl-mobile {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.font-title-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.font-currency-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-currency-display-mobile {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.font-label-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.font-label-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.font-mono-num {
+  font-family: 'Inter', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Material symbols outlined styling */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
